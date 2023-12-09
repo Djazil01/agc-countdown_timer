@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ALGERIA GAME CHALLENGE CONTDOWN TIMER</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"
+    ></script>
+  </head>
+  <body>
+    <div class="overlay"></div>
+
+    <div class="wrapper">
+      <div class="">
+        <h1 class="title">
+          <img src="3d object/LOGO.png" width="450px" />
+        </h1>
+        <div class="model">
+          <model-viewer
+            src="3d object/Videogame Controller.glb"
+            camera-controls
+            auto-rotate
+            disable-zoom
+          ></model-viewer>
+        </div>
+        <div class="model2">
+          <model-viewer
+            src="3d object/Precision Rifle Chassis.glb"
+            camera-controls
+            auto-rotate
+            disable-zoom
+          ></model-viewer>
+        </div>
+        <div class="model3">
+          <model-viewer
+            src="3d object/deep space robot.glb"
+            camera-controls
+            auto-rotate
+            disable-zoom
+          ></model-viewer>
+        </div>
+        <div class="model4">
+          <model-viewer
+            src="3d object/Animated Robot.glb"
+            camera-controls
+            auto-rotate
+            disable-zoom
+          ></model-viewer>
+        </div>
+        <div class="model5">
+          <model-viewer
+            src="3d object/Handheld videogame console.glb"
+            camera-controls
+            auto-rotate
+            disable-zoom
+          ></model-viewer>
+        </div>
+
+        <div class="countdown-container">
+          <div>
+            <p id="days" class="big-text">0</p>
+            <span>Days</span>
+          </div>
+          <div>
+            <p id="hours" class="big-text">0</p>
+            <span>Hours</span>
+          </div>
+          <div>
+            <p id="min" class="big-text">0</p>
+            <span>Min</span>
+          </div>
+          <div>
+            <p id="sec" class="big-text">0</p>
+            <span>Sec</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="timer.js"></script>
+  </body>
+</html>
